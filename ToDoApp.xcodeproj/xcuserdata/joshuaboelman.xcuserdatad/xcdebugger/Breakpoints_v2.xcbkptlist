@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E8AA4869-2E9C-4B24-BC50-EFD54CC3AC36"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D2442942-90A1-4545-896E-D07150D3E2D5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ToDoApp/Network/TaskAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "fetchTasks(completed:sortBy:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "07D537E9-2C36-4FAA-BC3B-2E2752C57C49"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ToDoApp/Network/TaskAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "fetchTasks(completed:sortBy:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C28AC121-3E82-4177-A9A9-4F2258898CEC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ToDoApp/Network/TaskAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "fetchTasks(completed:sortBy:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D06FEB2-9251-4244-AAD0-DE8B8CDE47C1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ToDoApp/Views/MainPageView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "9D06FEB2-9251-4244-AAD0-DE8B8CDE47C1 - 624584d9801fd49e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(ToDoApp.TitleView, SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;ToDoApp.Task&gt;, Swift.String, SwiftUI.Text&gt;&gt;)&gt; in ToDoApp.MainPageView.body.getter : some"
+                  moduleName = "ToDoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaboelman/Desktop/ToDoApp/ToDoApp/Views/MainPageView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "219">
+               </Location>
+               <Location
+                  uuid = "9D06FEB2-9251-4244-AAD0-DE8B8CDE47C1 - 52b0bf7f8328f436"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (ToDoApp.Task) -&gt; SwiftUI.Text in closure #1 () -&gt; SwiftUI.TupleView&lt;(ToDoApp.TitleView, SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;ToDoApp.Task&gt;, Swift.String, SwiftUI.Text&gt;&gt;)&gt; in ToDoApp.MainPageView.body.getter : some"
+                  moduleName = "ToDoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaboelman/Desktop/ToDoApp/ToDoApp/Views/MainPageView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "198">
+               </Location>
+               <Location
+                  uuid = "9D06FEB2-9251-4244-AAD0-DE8B8CDE47C1 - 52b0bf7f8328f474"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (ToDoApp.Task) -&gt; SwiftUI.Text in closure #1 () -&gt; SwiftUI.TupleView&lt;(ToDoApp.TitleView, SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;ToDoApp.Task&gt;, Swift.String, SwiftUI.Text&gt;&gt;)&gt; in ToDoApp.MainPageView.body.getter : some"
+                  moduleName = "ToDoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joshuaboelman/Desktop/ToDoApp/ToDoApp/Views/MainPageView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "734">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

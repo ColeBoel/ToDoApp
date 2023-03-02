@@ -14,6 +14,18 @@
 		F724E32D29B0E8CC006C9B9E /* ToDoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724E32C29B0E8CC006C9B9E /* ToDoAppTests.swift */; };
 		F724E33729B0E8CC006C9B9E /* ToDoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724E33629B0E8CC006C9B9E /* ToDoAppUITests.swift */; };
 		F724E33929B0E8CC006C9B9E /* ToDoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724E33829B0E8CC006C9B9E /* ToDoAppUITestsLaunchTests.swift */; };
+		F724E34B29B0EBD3006C9B9E /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724E34A29B0EBD3006C9B9E /* MainPageView.swift */; };
+		F724E34D29B0EBE1006C9B9E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724E34C29B0EBE1006C9B9E /* SettingsView.swift */; };
+		F724E34F29B0EBF2006C9B9E /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724E34E29B0EBF2006C9B9E /* CreateView.swift */; };
+		F724E35129B0EC00006C9B9E /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724E35029B0EC00006C9B9E /* EditView.swift */; };
+		F724E35429B0ECC7006C9B9E /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724E35329B0ECC7006C9B9E /* NavigationBarView.swift */; };
+		F724E35629B0EF05006C9B9E /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724E35529B0EF05006C9B9E /* TitleView.swift */; };
+		F724E35829B0EF53006C9B9E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724E35729B0EF53006C9B9E /* CardView.swift */; };
+		F724E35E29B0F380006C9B9E /* IconViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724E35D29B0F380006C9B9E /* IconViewModifier.swift */; };
+		F724E36029B0F67C006C9B9E /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724E35F29B0F67C006C9B9E /* CheckBoxView.swift */; };
+		F724E36229B10967006C9B9E /* TaskAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724E36129B10967006C9B9E /* TaskAPI.swift */; };
+		F724E36429B10983006C9B9E /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724E36329B10983006C9B9E /* TaskModel.swift */; };
+		F7AAE9C929B1289D00F87C7C /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AAE9C829B1289D00F87C7C /* TaskViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +56,18 @@
 		F724E33229B0E8CC006C9B9E /* ToDoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F724E33629B0E8CC006C9B9E /* ToDoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoAppUITests.swift; sourceTree = "<group>"; };
 		F724E33829B0E8CC006C9B9E /* ToDoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F724E34A29B0EBD3006C9B9E /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		F724E34C29B0EBE1006C9B9E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F724E34E29B0EBF2006C9B9E /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		F724E35029B0EC00006C9B9E /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		F724E35329B0ECC7006C9B9E /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		F724E35529B0EF05006C9B9E /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		F724E35729B0EF53006C9B9E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F724E35D29B0F380006C9B9E /* IconViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconViewModifier.swift; sourceTree = "<group>"; };
+		F724E35F29B0F67C006C9B9E /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		F724E36129B10967006C9B9E /* TaskAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAPI.swift; sourceTree = "<group>"; };
+		F724E36329B10983006C9B9E /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		F7AAE9C829B1289D00F87C7C /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +118,11 @@
 		F724E31A29B0E8CA006C9B9E /* ToDoApp */ = {
 			isa = PBXGroup;
 			children = (
-				F724E31B29B0E8CA006C9B9E /* ToDoAppApp.swift */,
-				F724E31D29B0E8CA006C9B9E /* ContentView.swift */,
-				F724E31F29B0E8CC006C9B9E /* Assets.xcassets */,
+				F724E34929B0E8FB006C9B9E /* App */,
+				F724E34829B0E8F1006C9B9E /* Models */,
+				F724E34729B0E8E6006C9B9E /* Network */,
+				F724E34629B0E8DC006C9B9E /* ViewModels */,
+				F724E34529B0E8D4006C9B9E /* Views */,
 				F724E32129B0E8CC006C9B9E /* Preview Content */,
 			);
 			path = ToDoApp;
@@ -125,6 +151,72 @@
 				F724E33829B0E8CC006C9B9E /* ToDoAppUITestsLaunchTests.swift */,
 			);
 			path = ToDoAppUITests;
+			sourceTree = "<group>";
+		};
+		F724E34529B0E8D4006C9B9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F724E35C29B0F366006C9B9E /* Modifiers */,
+				F724E35229B0ECB5006C9B9E /* Components */,
+				F724E34A29B0EBD3006C9B9E /* MainPageView.swift */,
+				F724E34C29B0EBE1006C9B9E /* SettingsView.swift */,
+				F724E34E29B0EBF2006C9B9E /* CreateView.swift */,
+				F724E35029B0EC00006C9B9E /* EditView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F724E34629B0E8DC006C9B9E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F7AAE9C829B1289D00F87C7C /* TaskViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F724E34729B0E8E6006C9B9E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F724E36129B10967006C9B9E /* TaskAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F724E34829B0E8F1006C9B9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F724E36329B10983006C9B9E /* TaskModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F724E34929B0E8FB006C9B9E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F724E31B29B0E8CA006C9B9E /* ToDoAppApp.swift */,
+				F724E31D29B0E8CA006C9B9E /* ContentView.swift */,
+				F724E31F29B0E8CC006C9B9E /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F724E35229B0ECB5006C9B9E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F724E35329B0ECC7006C9B9E /* NavigationBarView.swift */,
+				F724E35529B0EF05006C9B9E /* TitleView.swift */,
+				F724E35729B0EF53006C9B9E /* CardView.swift */,
+				F724E35F29B0F67C006C9B9E /* CheckBoxView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F724E35C29B0F366006C9B9E /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				F724E35D29B0F380006C9B9E /* IconViewModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +350,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				F724E31E29B0E8CA006C9B9E /* ContentView.swift in Sources */,
+				F7AAE9C929B1289D00F87C7C /* TaskViewModel.swift in Sources */,
+				F724E36229B10967006C9B9E /* TaskAPI.swift in Sources */,
+				F724E35829B0EF53006C9B9E /* CardView.swift in Sources */,
+				F724E34D29B0EBE1006C9B9E /* SettingsView.swift in Sources */,
+				F724E35129B0EC00006C9B9E /* EditView.swift in Sources */,
+				F724E35E29B0F380006C9B9E /* IconViewModifier.swift in Sources */,
 				F724E31C29B0E8CA006C9B9E /* ToDoAppApp.swift in Sources */,
+				F724E36029B0F67C006C9B9E /* CheckBoxView.swift in Sources */,
+				F724E34B29B0EBD3006C9B9E /* MainPageView.swift in Sources */,
+				F724E35429B0ECC7006C9B9E /* NavigationBarView.swift in Sources */,
+				F724E36429B10983006C9B9E /* TaskModel.swift in Sources */,
+				F724E34F29B0EBF2006C9B9E /* CreateView.swift in Sources */,
+				F724E35629B0EF05006C9B9E /* TitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

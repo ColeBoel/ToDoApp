@@ -12,19 +12,12 @@ struct Task: Identifiable, Codable {
     let taskDescription: String
     let createdDate: String
     let dueDate: String
-    var completed: Bool
-
-    enum CodingKeys: String, CodingKey {
-        case id
-        case taskDescription
-        case createdDate
-        case dueDate
-        case completed
-    }
-
-    
+    var completed: Int
 }
 
-struct Tasks: Codable {
-    var tasks: [Task]
+
+struct postTask: Codable {
+    let postTaskDescription: String
+    let postTaskDueDate: Date
+    let postTaskCompleted: Int
 }

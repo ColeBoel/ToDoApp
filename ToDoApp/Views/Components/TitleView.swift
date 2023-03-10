@@ -8,17 +8,25 @@
 import SwiftUI
 
 struct TitleView: View {
+    @ObservedObject var vm : TaskViewModel
+
     var body: some View {
+        
         HStack{
+            
             NavigationLink{
-                    AnyView(SettingsView())
+                
+                SettingsView(vm: vm)
+                
                 } label: {
+                    
                     Image(systemName: "gearshape.fill")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 30, height: 30, alignment: .center)
                         .padding()
                         .foregroundColor(.black)
+                    
                 }
             Spacer()
             Text("Task List")
@@ -27,7 +35,7 @@ struct TitleView: View {
                 .padding()
             Spacer()
             NavigationLink{
-                AnyView(CreateView())
+                CreateView()
             } label: {
                 Image(systemName: "plus.circle.fill")
                     .resizable()
@@ -44,6 +52,6 @@ struct TitleView: View {
 
 struct TitleView_Previews: PreviewProvider {
     static var previews: some View {
-        TitleView()
+        TitleView(vm: TaskViewModel())
     }
 }

@@ -8,48 +8,75 @@
 import SwiftUI
 
 struct CardView: View {
-    @State var isChecked = false
-    var taskDescription : String
-    var taskDueDate: String
-    var taskCreatedDate: String
-   
+    
+    @State var isChecked : Bool
+    var task : Task
+    @State var formattedDueDate = ""
+    @ObservedObject var vm : TaskViewModel
+
     
     var body: some View {
         
         LazyHStack{
             
             //Edit Button
-            NavigationLink{ EditView()}label:{
+            NavigationLink{EditView(task: task, selectedDate: dateFormatter.date(from: task.dueDate) ?? Date.now)}label:{
                     Image(systemName: "pencil")
                     .modifier(IconViewModifier())}
             
-       
             //End Edit Button
             
             
             //Title Stack
             VStack(alignment: .leading){
-                Text("\(taskDescription)")
+                Text("\(task.taskDescription)")
                     .font(.title3)
                     .bold()
                 
-                Text("Due:\(taskDueDate)")
+                Text("Due: \(formattedDueDate)")
                     
-                Text("Created:\(taskCreatedDate)")
+                Text("Created: \(task.createdDate)")
+            }
+            
+            .onAppear{
+                formattedDueDate = convertDueDateString(task.dueDate) ?? task.dueDate
             }
             //End Title Stack
             .frame(width: UIScreen.main.bounds.width * 0.50,alignment: .leading)
             
             //CheckBox
             CheckBoxView(isChecked: $isChecked)
-                .onTapGesture{isChecked.toggle()}
+                .onTapGesture{
+                    isChecked.toggle()
+                    
+                    TaskAPI.editTask(updatedTask: Task(id: task.id, taskDescription: task.taskDescription, createdDate: task.createdDate, dueDate: task.dueDate, completed: abs(task.completed - 1))) { task, error in
+                    if let error = error {
+                        print("💨Error: \(error)")
+                        return
+                    }
+                    if let task = task {
+                        
+                        print("Updated task: \(task)")
+                        }
+                    }
+                    vm.refresh()
+                    
+                }
             //End Checkbox
             
             
             //Delete Todo
             Button{
                 //Remove Todo from vm.taskList
+                TaskAPI.deleteTask(id: task.id) { error in
+                    if let error = error {
+                        print("Error: \(error.localizedDescription)")
+                    } else {
+                        print("🗑️🗑️🗑️ Task deleted successfully!🗑️🗑️🗑️")
+                    }
+                }
                 
+                vm.refresh()
             }label: {
                 Image(systemName: "trash.fill")
                     .frame(width: 30, height: 30)

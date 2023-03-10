@@ -8,39 +8,66 @@
 import Foundation
 
 class TaskViewModel: ObservableObject {
-    @Published var tasks: Tasks?
+    @Published var tasks: [Task]?
+    @Published var all = true
+    @Published var completed = false
+    @Published var incomplete = false
+    @Published var due = true
+    @Published var created = false
+    @Published var ascending = true
+    @Published var descending = false
+
     
+    
+    //Fetching all tasks upon init
     init(){
-          TaskAPI.fetchTasks(completed: false, sortBy: "") { fetchedTasks, error in
-            if let error = error {
-                print("Error fetching tasks: \(error.localizedDescription)")
-            } else if let fetchedTasks = fetchedTasks {
-                DispatchQueue.main.async {
-                    print("Task 0 Description = \(fetchedTasks[0].taskDescription)")
-                   // self.tasks = fetchedTasks
-                    self.tasks = Tasks(tasks: fetchedTasks)
-                    
-                }
-                
-            }
+        refresh()
+    }
+    //End Init
+    
+    func refresh(){
+        
+        var completedFilter : Int? = nil
+        var sortby: String? = nil
+        
+        if completed{
+            completedFilter = 1
+        } else if incomplete{
+            completedFilter = 0
         }
+        
+        if descending{
+            sortby = "-"
+        } else if ascending {
+            sortby = ""
+        }
+        
+        if due{
+            sortby! += "dueDate"
+        } else if created && sortby != nil{
+            sortby! += "createdDate"
+        }
+        
+       
+        print(sortby)
+        
+        
+        TaskAPI.fetchTasks(completed: completedFilter, sortBy: sortby) { fetchedTasks, error in
+          if let error = error {
+              print("Error fetching tasks: \(error)")
+          } else if let fetchedTasks = fetchedTasks {
+              DispatchQueue.main.async {
+                  self.tasks = fetchedTasks
+              }
+              
+          }
+      }
     }
     
-//    
-//    func addTask(_ task: Task) {
-//            tasks.append(task)
-//        }
-//
-//    func updateTask(_ task: Task) {
-//        if let index = tasks.firstIndex(where: { $0.id == task.id }) {
-//                tasks[index] = task
-//            }
-//    }
-//
-//        func deleteTask(_ task: Task) {
-//            if let index = tasks.firstIndex(where: { $0.id == task.id }) {
-//                tasks.remove(at: index)
-//            }
-//        }
+   
+    
+    
+    
+    
     
 }

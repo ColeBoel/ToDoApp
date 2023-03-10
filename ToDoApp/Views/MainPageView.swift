@@ -8,36 +8,47 @@
 import SwiftUI
 
 struct MainPageView: View {
+    
     @ObservedObject var vm = TaskViewModel()
     
     
     var body: some View {
         
-       VStack{
+        NavigationView{
             
-            TitleView()
-            
-           ScrollView{
-            if let tasks = vm.tasks {
+            VStack{
                 
-                ForEach(tasks.tasks, id: \.id) { task in
-                
-                       CardView(taskDescription: task.taskDescription, taskDueDate: task.dueDate, taskCreatedDate: task.createdDate)
+                TitleView(vm: vm)
+                 
+                ScrollView{
                     
+                 if let tasks = vm.tasks {
+                     
+                     ForEach(tasks, id: \.id) { task in
+                     
+                         CardView(isChecked: (task.completed != 0), task: task, vm: vm)
+                         
+                         }
+                     }// End If
+                    
+                 }.background(.clear)
+                  .refreshable{
+                        vm.refresh()
                     }
-                }// End If
-               
-            }.background(.clear)
 
+                 
+             }
+             .frame(width: UIScreen.main.bounds.width * 0.90, height: UIScreen.main.bounds.height * 0.90, alignment: .top)
+             .onAppear{
+                 vm.refresh()
+             }
+             
+         }
+            
             
         }
-        .frame(width: UIScreen.main.bounds.width * 0.90, height: UIScreen.main.bounds.height * 0.90, alignment: .top)
         
-        
-        
-        
-        
-    }
+      
 
 }
 
